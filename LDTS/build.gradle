@@ -1,0 +1,45 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'info.solidsoft.pitest' version '1.15.0'
+    id 'org.kordamp.gradle.errorprone' version '0.48.0'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
+
+group = 'com.project.l02gr08'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.google.guava', name: 'guava', version: '32.1.2-jre'
+    implementation group: 'com.googlecode.lanterna', name:
+            'lanterna', version: '3.1.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.mockito:mockito-core:3.7.7'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pitest {
+    junit5PluginVersion = '1.0.0'
+    targetClasses = [
+            'com.project.l02gr08.controller.*',
+            'com.project.l02gr08.model.*',
+            'com.project.l02gr08.state.*',
+            'com.project.l02gr08.viewer.*'
+    ]
+}
+
+application {
+    mainClass.set("com.project.l02gr08.Game")
+}
