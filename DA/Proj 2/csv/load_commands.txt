@@ -1,0 +1,16 @@
+Note: you can also load the database using argv (./main <edges_csv> [<nodes_csv>]).
+Note: For these commands to work properly, you should put in this directory the directories with the graphs and rename the "Real-world Graphs" directory to "Real-World".
+
+Toy Graphs:
+load csv/Toy-Graphs/shipping.csv
+load csv/Toy-Graphs/stadiums.csv
+load csv/Toy-Graphs/tourism.csv
+
+Medium Graphs:
+load csv/Extra_Fully_Connected_Graphs/edges_25.csv csv/Extra_Fully_Connected_Graphs/nodes.csv
+load csv/Extra_Fully_Connected_Graphs/edges_900.csv csv/Extra_Fully_Connected_Graphs/nodes.csv
+
+Real World Graphs:
+load csv/Real-World/graph1/edges.csv csv/Real-World/graph1/nodes.csv
+load csv/Real-World/graph2/edges.csv csv/Real-World/graph2/nodes.csv
+load csv/Real-World/graph3/edges.csv csv/Real-World/graph3/nodes.csv
