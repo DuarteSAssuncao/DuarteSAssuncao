@@ -1,0 +1,16 @@
+cxxflags = -std=c++14 -pedantic -Wall -Wuninitialized -Werror -Wextra -lm -fsanitize=address -fsanitize=undefined -O2
+
+rule object
+    command = g++ -c $cxxflags $in -o $out
+
+rule exe
+    command = g++ $cxxflags $in -o $out
+
+build obj/Edge.o: object src/Edge.cpp
+build obj/Graph.o: object src/Graph.cpp
+build obj/Parser.o: object src/Parser.cpp
+build obj/Runtime.o: object src/Runtime.cpp
+build obj/Tests.o: object src/Tests.cpp
+build obj/Vertex.o: object src/Vertex.cpp
+build obj/main.o: object src/main.cpp
+build main: exe obj/main.o obj/Edge.o obj/Graph.o obj/Parser.o obj/Runtime.o obj/Tests.o obj/Vertex.o
