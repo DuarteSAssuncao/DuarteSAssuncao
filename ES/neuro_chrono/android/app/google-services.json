@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "734669479955",
+    "project_id": "neuro-chrono-hwbm3l",
+    "storage_bucket": "neuro-chrono-hwbm3l.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734669479955:android:c5642957920183e5a69fe6",
+        "android_client_info": {
+          "package_name": "com.example.neuro_chrono"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0nJ_sQG5J0zMIiTy0PQJ3pFitXcgIyG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734669479955:android:b18a3f6838f8e506a69fe6",
+        "android_client_info": {
+          "package_name": "com.neurochrono"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0nJ_sQG5J0zMIiTy0PQJ3pFitXcgIyG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
