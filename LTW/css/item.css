@@ -1,0 +1,52 @@
+.item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "img info"
+    "descript descript";
+  margin: 0 3em;
+  flex-grow: 1;
+}
+
+.item .photo {
+  grid-area: img;
+  border-radius: var(--radius);
+  margin: 0 3em;
+  width: 30em;
+  height: 30em;
+  object-fit: cover;
+}
+
+.item .info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    max-height: 4em;
+  }
+}
+
+.item .descript {
+  grid-area: descript;
+  margin: 0 3em;
+}
+
+@media print {
+
+  form,
+  input,
+  nav,
+  footer,
+  header {
+    display: none;
+  }
+
+}

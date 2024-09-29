@@ -1,0 +1,45 @@
+@media (max-width: 70em) {
+  h1 {
+    font-size: 2em;
+  }
+
+  section.item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.item article {
+    margin: 0 3em;
+  }
+}
+
+@media (max-width: 35em) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .item img.photo {
+    width: 20em;
+    height: 20em;
+  }
+
+  section.item, section.item article, section.item article.descript {
+    margin: 0 1em;
+  }
+
+  section.item img.photo {
+    align-self: center;
+  }
+  
+  section.item article.info form {
+    align-self: center;
+    width: 100%;
+  }
+
+  section.item article.info form.price {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}

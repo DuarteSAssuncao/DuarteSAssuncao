@@ -1,0 +1,26 @@
+section.index {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: var(--padding);
+  justify-content: center;
+}
+
+section.index form {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: max-content;
+  justify-content: center;
+  align-items: center;
+}
+
+section.items {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

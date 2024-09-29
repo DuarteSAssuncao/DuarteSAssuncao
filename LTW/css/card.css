@@ -1,0 +1,37 @@
+/* CSS dedicated to an item card */
+
+:root {
+  --image-size: 20em;
+  --shadow: 0px 10px 30px -20px #000000;
+}
+
+a.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  margin: var(--padding);
+  max-width: var(--image-size);
+  height: fit-content;
+  box-shadow: var(--shadow);
+}
+
+a.card img {
+  object-fit: cover;
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: var(--radius);
+  border-image-slice: fill;
+  box-shadow: var(--shadow);
+}
+
+a.card p::after {
+  content: "€";
+}
+
+a.card .delete * {
+  background-color: var(--color-warning);
+}

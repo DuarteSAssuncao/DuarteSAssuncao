@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* CSS variables */
+
+:root {
+  --color-background: #eff1f5;
+  --color-text: #313244;
+  --color-link: #40a02b;
+  --color-primary: #a6e3a1;
+  --color-secondary: #94e2d5;
+  --color-tertiary: #94e2d566;
+  --color-msg: #94e2d5;
+  --color-warning: #ea999c;
+  --font-family: "Inter", sans-serif;
+  --font-size: 1em;
+  --bold-family: "Inter", sans-serif;
+  --bold-size: 3em;
+  --radius: 15px;
+  --padding: 1rem;
+  --max-width: 100em;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --font-size: 0.95em;
+    --bold-size: 2em;
+  }
+  header nav img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+}
+
+/* Elements */
+
+html {
+  background-color: var(--color-background);
+}
+
+* {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-text);
+
+  &:any-link {
+    text-decoration: none;
+    color: var(--color-link);
+  }
+}
+
+bold {
+  border-radius: var(--radius);
+  background-color: var(--color-msg);
+  padding: var(--padding);
+  margin: var(--padding);
+
+  &::before {
+    content: "ⓘ ";
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 18em;
+}
+
+input,
+select {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--radius);
+  margin: var(--padding);
+  border: 0px solid var(--color-link);
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  background-color: var(--color-background);
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  padding: var(--padding);
+  /* border-collapse: separate; */
+  border-radius: var(--radius);
+}
+
+td {
+  justify-content: center;
+  padding: var(--padding);
+}
+
+td:last-child {
+  width: 10%;
+}
+
+tr {
+  min-height: 5em;
+  height: 3em;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-tertiary);
+}
+
+tr:first-child {
+  height: 3em;
+  background: var(--color-primary);
+  font-weight: bold;
+}
+
+/* Sections */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  margin: 0;
+  /* Used to occupy the whole screen and to move the footer to the bottom */
+}
+
+header {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    grid-column: 1;
+    padding: var(--padding);
+
+    p {
+      margin: 0;
+      padding-top: var(--padding);
+      text-align: center;
+    }
+  }
+
+  nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+header.minimal {
+  background-color: transparent;
+  justify-content: center;
+
+  p {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    strong {
+      font-size: 2.5rem;
+    }
+  }
+
+  img {
+    padding: var(--padding);
+  }
+}
+
+h1 {
+  font-family: var(--bold-family);
+  font-size: var(--bold-size);
+  margin: 0em;
+  padding: var(--padding);
+  width: max-content;
+}
+
+section.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  padding: var(--padding);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  a:any-link {
+    color: var(--color-text);
+    padding: var(--padding);
+  }
+}
