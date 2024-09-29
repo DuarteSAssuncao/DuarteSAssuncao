@@ -1,5 +1,4 @@
 ## Duarte Assunção
---
 
 Currently student of Bachelor in Informatics and Computing Engineering at the Faculty of Engineering of the University of Porto.
 
