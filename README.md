@@ -1,4 +1,7 @@
-## Hi there 👋
+## Duarte Assunção
+--
+
+Currently student of Bachelor in Informatics and Computing Engineering at the Faculty of Engineering of the University of Porto.
 
 <!--
 **DuarteSAssuncao/DuarteSAssuncao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
